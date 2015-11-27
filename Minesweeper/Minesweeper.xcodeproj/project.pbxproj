@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B37EE81C1C06ED1C00912221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE81B1C06ED1C00912221 /* main.m */; };
+		B37EE81F1C06ED1C00912221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE81E1C06ED1C00912221 /* AppDelegate.m */; };
+		B37EE8271C06ED1C00912221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8261C06ED1C00912221 /* Assets.xcassets */; };
+		B37EE8351C06ED1C00912221 /* MinesweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE8341C06ED1C00912221 /* MinesweeperTests.m */; };
+		B37EE8401C06ED1C00912221 /* MinesweeperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE83F1C06ED1C00912221 /* MinesweeperUITests.m */; };
+		B37EE8511C06EE5400912221 /* mine_explode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B37EE84F1C06EE5400912221 /* mine_explode.mp3 */; };
+		B37EE8521C06EE5400912221 /* music_success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8501C06EE5400912221 /* music_success.mp3 */; };
+		B37EE8801C06EE7200912221 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8541C06EE7200912221 /* 0.png */; };
+		B37EE8811C06EE7200912221 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8551C06EE7200912221 /* 1.png */; };
+		B37EE8821C06EE7200912221 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8561C06EE7200912221 /* 2.png */; };
+		B37EE8831C06EE7200912221 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8571C06EE7200912221 /* 3.png */; };
+		B37EE8841C06EE7200912221 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8581C06EE7200912221 /* 4.png */; };
+		B37EE8851C06EE7200912221 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8591C06EE7200912221 /* 5.png */; };
+		B37EE8861C06EE7200912221 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85A1C06EE7200912221 /* 6.png */; };
+		B37EE8871C06EE7200912221 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85B1C06EE7200912221 /* 7.png */; };
+		B37EE8881C06EE7200912221 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85C1C06EE7200912221 /* 8.png */; };
+		B37EE8891C06EE7200912221 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85D1C06EE7200912221 /* 9.png */; };
+		B37EE88A1C06EE7200912221 /* app_begin.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85E1C06EE7200912221 /* app_begin.png */; };
+		B37EE88B1C06EE7200912221 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE85F1C06EE7200912221 /* blank.png */; };
+		B37EE88C1C06EE7200912221 /* blank_hl.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8601C06EE7200912221 /* blank_hl.png */; };
+		B37EE88D1C06EE7200912221 /* bombdeath.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8611C06EE7200912221 /* bombdeath.png */; };
+		B37EE88E1C06EE7200912221 /* bombflagged.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8621C06EE7200912221 /* bombflagged.png */; };
+		B37EE88F1C06EE7200912221 /* bombmisflagged.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8631C06EE7200912221 /* bombmisflagged.png */; };
+		B37EE8901C06EE7200912221 /* bombquestion.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8641C06EE7200912221 /* bombquestion.png */; };
+		B37EE8911C06EE7200912221 /* bombrevealed.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8651C06EE7200912221 /* bombrevealed.png */; };
+		B37EE8921C06EE7200912221 /* bottom_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8661C06EE7200912221 /* bottom_bg.png */; };
+		B37EE8931C06EE7200912221 /* bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8671C06EE7200912221 /* bronze.png */; };
+		B37EE8941C06EE7200912221 /* facedead.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8681C06EE7200912221 /* facedead.png */; };
+		B37EE8951C06EE7200912221 /* faceooh.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8691C06EE7200912221 /* faceooh.png */; };
+		B37EE8961C06EE7200912221 /* facesmile.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86A1C06EE7200912221 /* facesmile.png */; };
+		B37EE8971C06EE7200912221 /* facewait.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86B1C06EE7200912221 /* facewait.png */; };
+		B37EE8981C06EE7200912221 /* facewin.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86C1C06EE7200912221 /* facewin.png */; };
+		B37EE8991C06EE7200912221 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86D1C06EE7200912221 /* gold.png */; };
+		B37EE89A1C06EE7200912221 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86E1C06EE7200912221 /* icon-72.png */; };
+		B37EE89B1C06EE7200912221 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE86F1C06EE7200912221 /* icon.png */; };
+		B37EE89C1C06EE7200912221 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8701C06EE7200912221 /* icon@2x.png */; };
+		B37EE89D1C06EE7200912221 /* mid_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8711C06EE7200912221 /* mid_bg.png */; };
+		B37EE89E1C06EE7200912221 /* open0.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8721C06EE7200912221 /* open0.png */; };
+		B37EE89F1C06EE7200912221 /* open1.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8731C06EE7200912221 /* open1.png */; };
+		B37EE8A01C06EE7200912221 /* open10.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8741C06EE7200912221 /* open10.png */; };
+		B37EE8A11C06EE7200912221 /* open2.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8751C06EE7200912221 /* open2.png */; };
+		B37EE8A21C06EE7200912221 /* open3.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8761C06EE7200912221 /* open3.png */; };
+		B37EE8A31C06EE7200912221 /* open4.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8771C06EE7200912221 /* open4.png */; };
+		B37EE8A41C06EE7200912221 /* open5.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8781C06EE7200912221 /* open5.png */; };
+		B37EE8A51C06EE7200912221 /* open6.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8791C06EE7200912221 /* open6.png */; };
+		B37EE8A61C06EE7200912221 /* open7.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87A1C06EE7200912221 /* open7.png */; };
+		B37EE8A71C06EE7200912221 /* open8.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87B1C06EE7200912221 /* open8.png */; };
+		B37EE8A81C06EE7200912221 /* open9.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87C1C06EE7200912221 /* open9.png */; };
+		B37EE8A91C06EE7200912221 /* silver.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87D1C06EE7200912221 /* silver.png */; };
+		B37EE8AA1C06EE7200912221 /* top_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87E1C06EE7200912221 /* top_bg.png */; };
+		B37EE8AB1C06EE7200912221 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE87F1C06EE7200912221 /* whiteButton.png */; };
+		B37EE8B61C06EF2700912221 /* TYGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE8B51C06EF2700912221 /* TYGameViewController.m */; };
+		B37EE8BB1C06EF3100912221 /* TYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE8B81C06EF3100912221 /* TYButton.m */; };
+		B37EE8BC1C06EF3100912221 /* TYScoreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE8BA1C06EF3100912221 /* TYScoreInfo.m */; };
+		B37EE8BF1C06EF3B00912221 /* TYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EE8BE1C06EF3B00912221 /* TYMainViewController.m */; };
+		B37EE8C11C06F4D800912221 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B37EE8C01C06F4D800912221 /* Default.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B37EE8311C06ED1C00912221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37EE80F1C06ED1C00912221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37EE8161C06ED1C00912221;
+			remoteInfo = Minesweeper;
+		};
+		B37EE83C1C06ED1C00912221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37EE80F1C06ED1C00912221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37EE8161C06ED1C00912221;
+			remoteInfo = Minesweeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B37EE8171C06ED1C00912221 /* Minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37EE81B1C06ED1C00912221 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B37EE81D1C06ED1C00912221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B37EE81E1C06ED1C00912221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B37EE8261C06ED1C00912221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37EE82B1C06ED1C00912221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37EE8301C06ED1C00912221 /* MinesweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37EE8341C06ED1C00912221 /* MinesweeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinesweeperTests.m; sourceTree = "<group>"; };
+		B37EE8361C06ED1C00912221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37EE83B1C06ED1C00912221 /* MinesweeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37EE83F1C06ED1C00912221 /* MinesweeperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinesweeperUITests.m; sourceTree = "<group>"; };
+		B37EE8411C06ED1C00912221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37EE84F1C06EE5400912221 /* mine_explode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mine_explode.mp3; sourceTree = "<group>"; };
+		B37EE8501C06EE5400912221 /* music_success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music_success.mp3; sourceTree = "<group>"; };
+		B37EE8541C06EE7200912221 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		B37EE8551C06EE7200912221 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B37EE8561C06EE7200912221 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		B37EE8571C06EE7200912221 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		B37EE8581C06EE7200912221 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		B37EE8591C06EE7200912221 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		B37EE85A1C06EE7200912221 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		B37EE85B1C06EE7200912221 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		B37EE85C1C06EE7200912221 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		B37EE85D1C06EE7200912221 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		B37EE85E1C06EE7200912221 /* app_begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_begin.png; sourceTree = "<group>"; };
+		B37EE85F1C06EE7200912221 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		B37EE8601C06EE7200912221 /* blank_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_hl.png; sourceTree = "<group>"; };
+		B37EE8611C06EE7200912221 /* bombdeath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombdeath.png; sourceTree = "<group>"; };
+		B37EE8621C06EE7200912221 /* bombflagged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombflagged.png; sourceTree = "<group>"; };
+		B37EE8631C06EE7200912221 /* bombmisflagged.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombmisflagged.png; sourceTree = "<group>"; };
+		B37EE8641C06EE7200912221 /* bombquestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombquestion.png; sourceTree = "<group>"; };
+		B37EE8651C06EE7200912221 /* bombrevealed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombrevealed.png; sourceTree = "<group>"; };
+		B37EE8661C06EE7200912221 /* bottom_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_bg.png; sourceTree = "<group>"; };
+		B37EE8671C06EE7200912221 /* bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bronze.png; sourceTree = "<group>"; };
+		B37EE8681C06EE7200912221 /* facedead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facedead.png; sourceTree = "<group>"; };
+		B37EE8691C06EE7200912221 /* faceooh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceooh.png; sourceTree = "<group>"; };
+		B37EE86A1C06EE7200912221 /* facesmile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facesmile.png; sourceTree = "<group>"; };
+		B37EE86B1C06EE7200912221 /* facewait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facewait.png; sourceTree = "<group>"; };
+		B37EE86C1C06EE7200912221 /* facewin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facewin.png; sourceTree = "<group>"; };
+		B37EE86D1C06EE7200912221 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold.png; sourceTree = "<group>"; };
+		B37EE86E1C06EE7200912221 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		B37EE86F1C06EE7200912221 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B37EE8701C06EE7200912221 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		B37EE8711C06EE7200912221 /* mid_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mid_bg.png; sourceTree = "<group>"; };
+		B37EE8721C06EE7200912221 /* open0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open0.png; sourceTree = "<group>"; };
+		B37EE8731C06EE7200912221 /* open1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open1.png; sourceTree = "<group>"; };
+		B37EE8741C06EE7200912221 /* open10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open10.png; sourceTree = "<group>"; };
+		B37EE8751C06EE7200912221 /* open2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open2.png; sourceTree = "<group>"; };
+		B37EE8761C06EE7200912221 /* open3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open3.png; sourceTree = "<group>"; };
+		B37EE8771C06EE7200912221 /* open4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open4.png; sourceTree = "<group>"; };
+		B37EE8781C06EE7200912221 /* open5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open5.png; sourceTree = "<group>"; };
+		B37EE8791C06EE7200912221 /* open6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open6.png; sourceTree = "<group>"; };
+		B37EE87A1C06EE7200912221 /* open7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open7.png; sourceTree = "<group>"; };
+		B37EE87B1C06EE7200912221 /* open8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open8.png; sourceTree = "<group>"; };
+		B37EE87C1C06EE7200912221 /* open9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open9.png; sourceTree = "<group>"; };
+		B37EE87D1C06EE7200912221 /* silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silver.png; sourceTree = "<group>"; };
+		B37EE87E1C06EE7200912221 /* top_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bg.png; sourceTree = "<group>"; };
+		B37EE87F1C06EE7200912221 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		B37EE8B41C06EF2700912221 /* TYGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGameViewController.h; sourceTree = "<group>"; };
+		B37EE8B51C06EF2700912221 /* TYGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGameViewController.m; sourceTree = "<group>"; };
+		B37EE8B71C06EF3100912221 /* TYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYButton.h; sourceTree = "<group>"; };
+		B37EE8B81C06EF3100912221 /* TYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYButton.m; sourceTree = "<group>"; };
+		B37EE8B91C06EF3100912221 /* TYScoreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYScoreInfo.h; sourceTree = "<group>"; };
+		B37EE8BA1C06EF3100912221 /* TYScoreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYScoreInfo.m; sourceTree = "<group>"; };
+		B37EE8BD1C06EF3B00912221 /* TYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMainViewController.h; sourceTree = "<group>"; };
+		B37EE8BE1C06EF3B00912221 /* TYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMainViewController.m; sourceTree = "<group>"; };
+		B37EE8C01C06F4D800912221 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37EE8141C06ED1C00912221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE82D1C06ED1C00912221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE8381C06ED1C00912221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B37EE80E1C06ED1C00912221 = {
+			isa = PBXGroup;
+			children = (
+				B37EE8191C06ED1C00912221 /* Minesweeper */,
+				B37EE8331C06ED1C00912221 /* MinesweeperTests */,
+				B37EE83E1C06ED1C00912221 /* MinesweeperUITests */,
+				B37EE8181C06ED1C00912221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B37EE8181C06ED1C00912221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8171C06ED1C00912221 /* Minesweeper.app */,
+				B37EE8301C06ED1C00912221 /* MinesweeperTests.xctest */,
+				B37EE83B1C06ED1C00912221 /* MinesweeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37EE8191C06ED1C00912221 /* Minesweeper */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8B31C06EF1C00912221 /* Model */,
+				B37EE8B21C06EEFA00912221 /* Controller */,
+				B37EE84D1C06EE4700912221 /* Resource */,
+				B37EE81D1C06ED1C00912221 /* AppDelegate.h */,
+				B37EE81E1C06ED1C00912221 /* AppDelegate.m */,
+				B37EE8261C06ED1C00912221 /* Assets.xcassets */,
+				B37EE82B1C06ED1C00912221 /* Info.plist */,
+				B37EE81A1C06ED1C00912221 /* Supporting Files */,
+			);
+			path = Minesweeper;
+			sourceTree = "<group>";
+		};
+		B37EE81A1C06ED1C00912221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE81B1C06ED1C00912221 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B37EE8331C06ED1C00912221 /* MinesweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8341C06ED1C00912221 /* MinesweeperTests.m */,
+				B37EE8361C06ED1C00912221 /* Info.plist */,
+			);
+			path = MinesweeperTests;
+			sourceTree = "<group>";
+		};
+		B37EE83E1C06ED1C00912221 /* MinesweeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE83F1C06ED1C00912221 /* MinesweeperUITests.m */,
+				B37EE8411C06ED1C00912221 /* Info.plist */,
+			);
+			path = MinesweeperUITests;
+			sourceTree = "<group>";
+		};
+		B37EE84D1C06EE4700912221 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8531C06EE7200912221 /* Images */,
+				B37EE84E1C06EE4700912221 /* Sounds */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B37EE84E1C06EE4700912221 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE84F1C06EE5400912221 /* mine_explode.mp3 */,
+				B37EE8501C06EE5400912221 /* music_success.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		B37EE8531C06EE7200912221 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8C01C06F4D800912221 /* Default.png */,
+				B37EE8541C06EE7200912221 /* 0.png */,
+				B37EE8551C06EE7200912221 /* 1.png */,
+				B37EE8561C06EE7200912221 /* 2.png */,
+				B37EE8571C06EE7200912221 /* 3.png */,
+				B37EE8581C06EE7200912221 /* 4.png */,
+				B37EE8591C06EE7200912221 /* 5.png */,
+				B37EE85A1C06EE7200912221 /* 6.png */,
+				B37EE85B1C06EE7200912221 /* 7.png */,
+				B37EE85C1C06EE7200912221 /* 8.png */,
+				B37EE85D1C06EE7200912221 /* 9.png */,
+				B37EE85E1C06EE7200912221 /* app_begin.png */,
+				B37EE85F1C06EE7200912221 /* blank.png */,
+				B37EE8601C06EE7200912221 /* blank_hl.png */,
+				B37EE8611C06EE7200912221 /* bombdeath.png */,
+				B37EE8621C06EE7200912221 /* bombflagged.png */,
+				B37EE8631C06EE7200912221 /* bombmisflagged.png */,
+				B37EE8641C06EE7200912221 /* bombquestion.png */,
+				B37EE8651C06EE7200912221 /* bombrevealed.png */,
+				B37EE8661C06EE7200912221 /* bottom_bg.png */,
+				B37EE8671C06EE7200912221 /* bronze.png */,
+				B37EE8681C06EE7200912221 /* facedead.png */,
+				B37EE8691C06EE7200912221 /* faceooh.png */,
+				B37EE86A1C06EE7200912221 /* facesmile.png */,
+				B37EE86B1C06EE7200912221 /* facewait.png */,
+				B37EE86C1C06EE7200912221 /* facewin.png */,
+				B37EE86D1C06EE7200912221 /* gold.png */,
+				B37EE86E1C06EE7200912221 /* icon-72.png */,
+				B37EE86F1C06EE7200912221 /* icon.png */,
+				B37EE8701C06EE7200912221 /* icon@2x.png */,
+				B37EE8711C06EE7200912221 /* mid_bg.png */,
+				B37EE8721C06EE7200912221 /* open0.png */,
+				B37EE8731C06EE7200912221 /* open1.png */,
+				B37EE8741C06EE7200912221 /* open10.png */,
+				B37EE8751C06EE7200912221 /* open2.png */,
+				B37EE8761C06EE7200912221 /* open3.png */,
+				B37EE8771C06EE7200912221 /* open4.png */,
+				B37EE8781C06EE7200912221 /* open5.png */,
+				B37EE8791C06EE7200912221 /* open6.png */,
+				B37EE87A1C06EE7200912221 /* open7.png */,
+				B37EE87B1C06EE7200912221 /* open8.png */,
+				B37EE87C1C06EE7200912221 /* open9.png */,
+				B37EE87D1C06EE7200912221 /* silver.png */,
+				B37EE87E1C06EE7200912221 /* top_bg.png */,
+				B37EE87F1C06EE7200912221 /* whiteButton.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B37EE8B21C06EEFA00912221 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8BD1C06EF3B00912221 /* TYMainViewController.h */,
+				B37EE8BE1C06EF3B00912221 /* TYMainViewController.m */,
+				B37EE8B41C06EF2700912221 /* TYGameViewController.h */,
+				B37EE8B51C06EF2700912221 /* TYGameViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B37EE8B31C06EF1C00912221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B37EE8B71C06EF3100912221 /* TYButton.h */,
+				B37EE8B81C06EF3100912221 /* TYButton.m */,
+				B37EE8B91C06EF3100912221 /* TYScoreInfo.h */,
+				B37EE8BA1C06EF3100912221 /* TYScoreInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37EE8161C06ED1C00912221 /* Minesweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37EE8441C06ED1C00912221 /* Build configuration list for PBXNativeTarget "Minesweeper" */;
+			buildPhases = (
+				B37EE8131C06ED1C00912221 /* Sources */,
+				B37EE8141C06ED1C00912221 /* Frameworks */,
+				B37EE8151C06ED1C00912221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minesweeper;
+			productName = Minesweeper;
+			productReference = B37EE8171C06ED1C00912221 /* Minesweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B37EE82F1C06ED1C00912221 /* MinesweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37EE8471C06ED1C00912221 /* Build configuration list for PBXNativeTarget "MinesweeperTests" */;
+			buildPhases = (
+				B37EE82C1C06ED1C00912221 /* Sources */,
+				B37EE82D1C06ED1C00912221 /* Frameworks */,
+				B37EE82E1C06ED1C00912221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37EE8321C06ED1C00912221 /* PBXTargetDependency */,
+			);
+			name = MinesweeperTests;
+			productName = MinesweeperTests;
+			productReference = B37EE8301C06ED1C00912221 /* MinesweeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B37EE83A1C06ED1C00912221 /* MinesweeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37EE84A1C06ED1C00912221 /* Build configuration list for PBXNativeTarget "MinesweeperUITests" */;
+			buildPhases = (
+				B37EE8371C06ED1C00912221 /* Sources */,
+				B37EE8381C06ED1C00912221 /* Frameworks */,
+				B37EE8391C06ED1C00912221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37EE83D1C06ED1C00912221 /* PBXTargetDependency */,
+			);
+			name = MinesweeperUITests;
+			productName = MinesweeperUITests;
+			productReference = B37EE83B1C06ED1C00912221 /* MinesweeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37EE80F1C06ED1C00912221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Leo Tang";
+				TargetAttributes = {
+					B37EE8161C06ED1C00912221 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					B37EE82F1C06ED1C00912221 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B37EE8161C06ED1C00912221;
+					};
+					B37EE83A1C06ED1C00912221 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B37EE8161C06ED1C00912221;
+					};
+				};
+			};
+			buildConfigurationList = B37EE8121C06ED1C00912221 /* Build configuration list for PBXProject "Minesweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37EE80E1C06ED1C00912221;
+			productRefGroup = B37EE8181C06ED1C00912221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37EE8161C06ED1C00912221 /* Minesweeper */,
+				B37EE82F1C06ED1C00912221 /* MinesweeperTests */,
+				B37EE83A1C06ED1C00912221 /* MinesweeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37EE8151C06ED1C00912221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37EE88A1C06EE7200912221 /* app_begin.png in Resources */,
+				B37EE8861C06EE7200912221 /* 6.png in Resources */,
+				B37EE8941C06EE7200912221 /* facedead.png in Resources */,
+				B37EE8841C06EE7200912221 /* 4.png in Resources */,
+				B37EE8A91C06EE7200912221 /* silver.png in Resources */,
+				B37EE89B1C06EE7200912221 /* icon.png in Resources */,
+				B37EE89D1C06EE7200912221 /* mid_bg.png in Resources */,
+				B37EE8851C06EE7200912221 /* 5.png in Resources */,
+				B37EE8A01C06EE7200912221 /* open10.png in Resources */,
+				B37EE89F1C06EE7200912221 /* open1.png in Resources */,
+				B37EE8901C06EE7200912221 /* bombquestion.png in Resources */,
+				B37EE8A51C06EE7200912221 /* open6.png in Resources */,
+				B37EE8A21C06EE7200912221 /* open3.png in Resources */,
+				B37EE88B1C06EE7200912221 /* blank.png in Resources */,
+				B37EE89A1C06EE7200912221 /* icon-72.png in Resources */,
+				B37EE8A41C06EE7200912221 /* open5.png in Resources */,
+				B37EE8971C06EE7200912221 /* facewait.png in Resources */,
+				B37EE8871C06EE7200912221 /* 7.png in Resources */,
+				B37EE8521C06EE5400912221 /* music_success.mp3 in Resources */,
+				B37EE8C11C06F4D800912221 /* Default.png in Resources */,
+				B37EE8801C06EE7200912221 /* 0.png in Resources */,
+				B37EE8A11C06EE7200912221 /* open2.png in Resources */,
+				B37EE8A31C06EE7200912221 /* open4.png in Resources */,
+				B37EE8991C06EE7200912221 /* gold.png in Resources */,
+				B37EE8821C06EE7200912221 /* 2.png in Resources */,
+				B37EE8921C06EE7200912221 /* bottom_bg.png in Resources */,
+				B37EE8831C06EE7200912221 /* 3.png in Resources */,
+				B37EE8911C06EE7200912221 /* bombrevealed.png in Resources */,
+				B37EE8931C06EE7200912221 /* bronze.png in Resources */,
+				B37EE8951C06EE7200912221 /* faceooh.png in Resources */,
+				B37EE89E1C06EE7200912221 /* open0.png in Resources */,
+				B37EE8511C06EE5400912221 /* mine_explode.mp3 in Resources */,
+				B37EE8A71C06EE7200912221 /* open8.png in Resources */,
+				B37EE88E1C06EE7200912221 /* bombflagged.png in Resources */,
+				B37EE88F1C06EE7200912221 /* bombmisflagged.png in Resources */,
+				B37EE8891C06EE7200912221 /* 9.png in Resources */,
+				B37EE88C1C06EE7200912221 /* blank_hl.png in Resources */,
+				B37EE8881C06EE7200912221 /* 8.png in Resources */,
+				B37EE8981C06EE7200912221 /* facewin.png in Resources */,
+				B37EE8811C06EE7200912221 /* 1.png in Resources */,
+				B37EE8AA1C06EE7200912221 /* top_bg.png in Resources */,
+				B37EE88D1C06EE7200912221 /* bombdeath.png in Resources */,
+				B37EE8A61C06EE7200912221 /* open7.png in Resources */,
+				B37EE8961C06EE7200912221 /* facesmile.png in Resources */,
+				B37EE8271C06ED1C00912221 /* Assets.xcassets in Resources */,
+				B37EE8A81C06EE7200912221 /* open9.png in Resources */,
+				B37EE89C1C06EE7200912221 /* icon@2x.png in Resources */,
+				B37EE8AB1C06EE7200912221 /* whiteButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE82E1C06ED1C00912221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE8391C06ED1C00912221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37EE8131C06ED1C00912221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37EE81F1C06ED1C00912221 /* AppDelegate.m in Sources */,
+				B37EE8BC1C06EF3100912221 /* TYScoreInfo.m in Sources */,
+				B37EE8BF1C06EF3B00912221 /* TYMainViewController.m in Sources */,
+				B37EE81C1C06ED1C00912221 /* main.m in Sources */,
+				B37EE8BB1C06EF3100912221 /* TYButton.m in Sources */,
+				B37EE8B61C06EF2700912221 /* TYGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE82C1C06ED1C00912221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37EE8351C06ED1C00912221 /* MinesweeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37EE8371C06ED1C00912221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37EE8401C06ED1C00912221 /* MinesweeperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B37EE8321C06ED1C00912221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37EE8161C06ED1C00912221 /* Minesweeper */;
+			targetProxy = B37EE8311C06ED1C00912221 /* PBXContainerItemProxy */;
+		};
+		B37EE83D1C06ED1C00912221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37EE8161C06ED1C00912221 /* Minesweeper */;
+			targetProxy = B37EE83C1C06ED1C00912221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B37EE8421C06ED1C00912221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B37EE8431C06ED1C00912221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37EE8451C06ED1C00912221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Think Go Now Technology Co.,Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Think Go Now Technology Co.,Ltd.";
+				INFOPLIST_FILE = Minesweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.minesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b3c86b5d-2e41-4420-bf35-019f24600a21";
+			};
+			name = Debug;
+		};
+		B37EE8461C06ED1C00912221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Think Go Now Technology Co.,Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Think Go Now Technology Co.,Ltd.";
+				INFOPLIST_FILE = Minesweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.minesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b3c86b5d-2e41-4420-bf35-019f24600a21";
+			};
+			name = Release;
+		};
+		B37EE8481C06ED1C00912221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MinesweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.MinesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minesweeper.app/Minesweeper";
+			};
+			name = Debug;
+		};
+		B37EE8491C06ED1C00912221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MinesweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.MinesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minesweeper.app/Minesweeper";
+			};
+			name = Release;
+		};
+		B37EE84B1C06ED1C00912221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MinesweeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.MinesweeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Minesweeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B37EE84C1C06ED1C00912221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MinesweeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leo.MinesweeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Minesweeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37EE8121C06ED1C00912221 /* Build configuration list for PBXProject "Minesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37EE8421C06ED1C00912221 /* Debug */,
+				B37EE8431C06ED1C00912221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37EE8441C06ED1C00912221 /* Build configuration list for PBXNativeTarget "Minesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37EE8451C06ED1C00912221 /* Debug */,
+				B37EE8461C06ED1C00912221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B37EE8471C06ED1C00912221 /* Build configuration list for PBXNativeTarget "MinesweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37EE8481C06ED1C00912221 /* Debug */,
+				B37EE8491C06ED1C00912221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B37EE84A1C06ED1C00912221 /* Build configuration list for PBXNativeTarget "MinesweeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37EE84B1C06ED1C00912221 /* Debug */,
+				B37EE84C1C06ED1C00912221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B37EE80F1C06ED1C00912221 /* Project object */;
+}
