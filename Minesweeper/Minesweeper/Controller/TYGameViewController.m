@@ -90,7 +90,7 @@
 - (void)updateCurrentRemandingMinesImage;
 - (void)updateImageViewWithTag:(NSInteger)tag numberOfCalculate:(NSInteger)num;
 - (void)updateCurrentScoreLeader;
-    
+
 - (void)gameOver;
 - (void)gameRestart;
 
@@ -141,6 +141,8 @@
             NSData *data = [NSKeyedArchiver archivedDataWithRootObject:info];;
             [_currentLevelScore setObject:data forKey:key];
         }
+    } else {
+        _currentLevelScore = [NSMutableDictionary dictionaryWithDictionary:_currentLevelScore];
     }
     
     // 关联音效ID
@@ -354,6 +356,8 @@
             NSData *data = [NSKeyedArchiver archivedDataWithRootObject:info];;
             [_currentLevelScore setObject:data forKey:key];
         }
+    } else {
+        _currentLevelScore = [NSMutableDictionary dictionaryWithDictionary:_currentLevelScore];
     }
     
     // 调整雷区大小
@@ -703,15 +707,15 @@
 - (void)updateCurrentScoreLeader {
     
     // 解码
-    NSData *gold = [_currentLevelScore valueForKey:@"gold"];
+    NSData *gold = [_currentLevelScore objectForKey:@"gold"];
     TYScoreInfo *goldInfo = [NSKeyedUnarchiver unarchiveObjectWithData:gold];
     _goldLabel.text = [goldInfo description];
     
-    NSData *silver = [_currentLevelScore valueForKey:@"silver"];
+    NSData *silver = [_currentLevelScore objectForKey:@"silver"];
     TYScoreInfo *silverInfo = [NSKeyedUnarchiver unarchiveObjectWithData:silver];
     _silverLabel.text = [silverInfo description];
     
-    NSData *bronze = [_currentLevelScore valueForKey:@"bronze"];
+    NSData *bronze = [_currentLevelScore objectForKey:@"bronze"];
     TYScoreInfo *bronzeInfo = [NSKeyedUnarchiver unarchiveObjectWithData:bronze];
     _bronzeLabel.text = [bronzeInfo description];
 }
@@ -792,11 +796,11 @@
     TYScoreInfo *currentInfo = [[TYScoreInfo alloc] initWithName:@"Leo" score:_currentTime];
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:currentInfo];
     
-    NSData *gold = [_currentLevelScore valueForKey:@"gold"];
+    NSData *gold = [_currentLevelScore objectForKey:@"gold"];
     TYScoreInfo *goldInfo = [NSKeyedUnarchiver unarchiveObjectWithData:gold];
-    NSData *silver = [_currentLevelScore valueForKey:@"silver"];
+    NSData *silver = [_currentLevelScore objectForKey:@"silver"];
     TYScoreInfo *silverInfo = [NSKeyedUnarchiver unarchiveObjectWithData:silver];
-    NSData *bronze = [_currentLevelScore valueForKey:@"bronze"];
+    NSData *bronze = [_currentLevelScore objectForKey:@"bronze"];
     TYScoreInfo *bronzeInfo = [NSKeyedUnarchiver unarchiveObjectWithData:bronze];
     
     if (_currentTime < goldInfo.score.doubleValue) {
@@ -866,7 +870,7 @@
     }
     // 长按事件
     else if ([gesture isKindOfClass:[UILongPressGestureRecognizer class]] &&
-        gesture.state == UIGestureRecognizerStateBegan) {
+             gesture.state == UIGestureRecognizerStateBegan) {
         
         for (id object in [_scrollView subviews]) {
             
